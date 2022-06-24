@@ -1,1 +1,1 @@
-[{"nombre":"lapiz","precio":25.68,"thumbnail":"link/adfjalkfjasñ","id":1},{"nombre":"goma","precio":22.28,"thumbnail":"link/brrardasgaasñ","id":2},{"nombre":"resma","precio":422.28,"thumbnail":"link/asd2345adfsa","id":3}]
+[{"nombre":"lapiz","precio":45.68,"thumbnail":"link/adfjalkfjasñ","id":1},{"nombre":"birome","precio":68.28,"thumbnail":"link/brrardasgaasñ","id":2},{"nombre":"resma","precio":422.32,"thumbnail":"link/asd2345adfsa","id":3}]
