@@ -1,1 +1,1 @@
-[{"nombre":"lapiz","precio":45.68,"thumbnail":"link/adfjalkfjasñ","id":1},{"nombre":"birome","precio":68.28,"thumbnail":"link/brrardasgaasñ","id":2},{"nombre":"resma","precio":422.32,"thumbnail":"link/asd2345adfsa","id":3}]
+[{"id":1,"titulo":"tijera","precio":123,"url":"https/www.librería.com.ar/asdfasfasfas"},{"id":2,"titulo":"escuadra","precio":200,"url":"https/www.librería.com.ar/134123asfas"},{"id":3,"titulo":"lapicera","precio":354,"url":"https/www.librería.com.ar/145dsaafj89a"},{"id":4,"titulo":"lapicera","precio":354,"url":"https/www.librería.com.ar/145dsaafj89a"}]
