@@ -1,5 +1,24 @@
 {
   "dependencies": {
     "express": "^4.18.1"
-  }
+  },
+  "scripts": {
+    "start": "node server.js"
+  },
+  "name": "desafiobackend2-alcazardaniel",
+  "version": "1.0.0",
+  "main": "contenedor.js",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/danielalcazarv/desafiosBackend2-AlcazarDaniel.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/danielalcazarv/desafiosBackend2-AlcazarDaniel/issues"
+  },
+  "homepage": "https://github.com/danielalcazarv/desafiosBackend2-AlcazarDaniel#readme",
+  "description": "",
+  "type": "module"
 }

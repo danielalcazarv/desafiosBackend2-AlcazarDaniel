@@ -1,7 +1,4 @@
-var fs = require('fs');
-const express = require ('express');
-const app = express();
-const port = 8080;
+import fs from 'fs'
 
 class Contenedor {
     constructor(archivo){
@@ -21,20 +18,6 @@ class Contenedor {
         }
         catch (error){
             console.log('Error al leer archivo. No se encontraron los productos. Tipo de error: ' + error);
-        }
-    }
-
-    async showRandom () {
-        const objsCollection = await this.getAll();
-        const randomNumber = () => {
-            return Math.floor(Math.random()*(objsCollection.length-1)+1);
-        }
-        try{
-            const idFiltrado = objsCollection.find(obj => obj.id == randomNumber());
-            return idFiltrado;
-        }
-        catch(error){
-            console.log(error);
         }
     }
 
@@ -103,38 +86,13 @@ class Contenedor {
 
 const productos = new Contenedor ('productos.txt')
 
+
+
+export {productos};
+
 /********Los productos se ingresan de uno a la vez.*******/
 //productos.save({titulo:"tijera",precio:123,url:"https/www.librería.com.ar/asdfasfasfas"})
 //productos.save({titulo:"escuadra",precio:200,url:"https/www.librería.com.ar/134123asfas"})
 //productos.save({titulo:"lapicera",precio:354,url:"https/www.librería.com.ar/145dsaafj89a"})
 
 
-const productosTodos = productos.getAll();
-const productoRandom = productos.showRandom();
-
-/*
-const productosTodos = async () => { 
-    const resultado = await productos.getAll();
-    return resultado;
-}
-
-const productoRandom = async () => { 
-    const resultado = await productos.showRandom();
-    return resultado;
-}*/
-
-
-app.get('/', (req, res)=>{
-    res.send('Estas en el home');
-})
-app.get('/productos', (req, res)=>{
-    res.send(productosTodos);
-})
-app.get('/productoRandom', (req, res)=>{
-    res.send(productoRandom);
-})
-
-app.listen(port, ()=>{
-    console.log("Tu servidor esta corriendo en el puerto " + port);
-})
-app.on("error", error=> console.log("El error es: " + error))
